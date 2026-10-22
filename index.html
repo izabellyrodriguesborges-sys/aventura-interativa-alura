@@ -1,36 +1,43 @@
-```html
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O Mistério da Floresta</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O Segredo da Mansão Vallerie</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main class="aventura">
-        <h1>🌙 O Mistério da Floresta</h1>
+  <main class="jogo">
+    <header class="cabecalho">
+      <p class="selo">UMA AVENTURA GÓTICA</p>
+      <h1>O Segredo da<br>Mansão Vallerie</h1>
+      <p class="subtitulo">Algumas portas nunca deveriam ser abertas.</p>
+    </header>
 
-        <div id="historia" class="cena">
-            <p>Você encontrou uma floresta mágica. Dois caminhos aparecem diante de você...</p>
+    <section id="cena" class="cena">
+      <div class="conteudo">
+        <p id="progresso" class="progresso"></p>
+        <h2 id="titulo"></h2>
+        <p id="historia"></p>
+        <div id="escolhas" class="escolhas"></div>
+        <p id="aviso" class="aviso" aria-live="polite"></p>
+      </div>
+    </section>
 
-            <button class="escolha" data-destino="castelo">
-                🏰 Ir até o castelo
-            </button>
+    <footer class="rodape">
+      <button id="voltar" class="secundario" hidden>
+        ← Voltar
+      </button>
+      <button id="reiniciar" class="secundario">
+        ↻ Reiniciar aventura
+      </button>
+      <p>15 fases · 3 finais · Uma escolha muda tudo</p>
+    </footer>
+  </main>
 
-            <button class="escolha" data-destino="rio">
-                🌊 Seguir o rio
-            </button>
-        </div>
-
-        <p id="mensagem"></p>
-        <button id="voltar" class="botao-voltar" data-voltar="" hidden>
-            ↩️ Voltar
-        </button>
-        <button id="reiniciar" hidden>🔄 Recomeçar</button>
-    </main>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
-```
